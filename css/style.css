@@ -86,7 +86,7 @@ main {
     border: 1px solid black;
 }
 
-/* regole immaguine prodotto */
+/* regole immagine prodotto */
 .image{
     position: relative;
 }
@@ -94,6 +94,21 @@ main {
 .first-image {
     max-width: 100%;
 }
+
+.second-image {
+    display: none;
+    max-width: 100%;
+}
+
+.image:hover .first-image {
+    display: none;
+}
+
+.image:hover .second-image {
+    display: inline-block;
+}
+
+
 
 .label {
     position: absolute;
@@ -120,6 +135,10 @@ main {
     right: 0px;
     top: 30px;
     font-size: x-large;
+}
+
+.favourites:hover {
+    color: red;
 }
 
 /* regole testo prodotto */
