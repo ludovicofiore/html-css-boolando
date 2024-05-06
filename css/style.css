@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -13,8 +14,12 @@
 .flex {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: center;  
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 /* regole intestazione */
@@ -22,27 +27,54 @@ header {
     width: 100%;
     height: 100px;
     background-color: rgb(255, 106, 0);
+    position: fixed;
+    z-index: 100;
 }
 
-nav div {
-    /* DEBUG */
+/* nav div {
     background-color: aquamarine;
     width: calc(100% / 3);
     height: 70px;
     border: 1px solid black;
+} */
 
+.nav-content {
+ width: calc(100% / 3);
+display: flex;
+align-items: center;
+gap: 15px;
+color: white;
+}
+
+.center {
+   text-align: center;
+   vertical-align: center;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#logo-boolean {
+    max-width: 50%;
 }
 
 
 /* regole parte principale */
 
 main {
-    margin: 50px 0;
+    margin-bottom: 50px;
+    padding-top: 150px;
 }
 
 .main-flex {
     gap: 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product {
