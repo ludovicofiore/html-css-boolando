@@ -22,6 +22,10 @@ a {
     color: white;
 }
 
+li {
+    list-style-type: none;
+}
+
 /* regole intestazione */
 header {
     width: 100%;
@@ -177,14 +181,35 @@ footer {
 
 .info {
     /* DEBUG */
-    width: 30%;
-    height: 50px;
-    background-color: red;
+    min-width: 30%;
+    /* height: 50px;
+    background-color: red; */
+}
+
+#info-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: x-small;
+    margin-top: 5px;
 }
 
 .social {
     /* DEBUG */
     width: 20%;
-    height: 50px;
-    background-color: green;
+    /* height: 50px;
+    background-color: green; */
+}
+
+.social h4 {
+    color: white;
+    text-align: right;
+}
+
+#social-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 5px;
+    font-size: large;
+
 }
