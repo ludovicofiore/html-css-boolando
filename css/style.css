@@ -75,6 +75,7 @@ main {
     gap: 20px;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: normal;
 }
 
 .product {
@@ -83,6 +84,42 @@ main {
     min-height: 350px;
     background-color: blue;
     border: 1px solid black;
+}
+
+/* regole prodotto */
+.image{
+    position: relative;
+}
+
+.first-image {
+    max-width: 100%;
+}
+
+.label {
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    color: white;
+    font-weight: 200;
+}
+
+.discount {
+    background-color: red;
+    padding: 5px;
+}
+
+.sustain {
+    background-color: green;
+    padding: 5px;
+}
+
+.favourites {
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    top: 30px;
+    font-size: x-large;
 }
 
 
